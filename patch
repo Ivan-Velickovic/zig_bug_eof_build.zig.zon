@@ -1,0 +1,11 @@
+diff --git a/src/main.zig b/src/main.zig
+index a723ba0..dd84f84 100644
+--- a/src/main.zig
++++ b/src/main.zig
+@@ -9,5 +9,5 @@ const zon: struct {
+ } = @import("build.zig.zon");
+ 
+ pub fn main() !void {
+-    std.debug.print("{s}\n", .{ zon.minimum_zig_version });
++    std.debug.print("{s}\n", .{ zon.version });
+ }
